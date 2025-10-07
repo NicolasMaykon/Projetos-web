@@ -18,24 +18,21 @@
     --font-poesia: 'Sriracha Regular'
 }
 
-.letra{
-    font-size: 1.35em;
-}
-
 *{
     margin: 0;
 }
 
 header{
     background-color: black;
-    height: 270px;
+    padding: 50px;
 }
 
 header h1{
     font-family: var(--font-titulo);
     color: white;
     font-weight: bold;
-    font-size: 7em;
+    font-variant: small-caps;
+    font-size: clamp(2em, 10vw, 15vh);
     text-align: center;
     padding-top: 40px;
     letter-spacing: 2px;
@@ -56,21 +53,20 @@ header a:hover{
     text-decoration: underline;
 }
 
-main{
-     padding: 20px;
-}
 main p{
     font-family: var(--font-poesia);
-    font-size: 2em;
+    font-size: clamp(1em, 3.5vw, 5vh);
     word-spacing: 10px;
-    white-space: pre-line;
-    padding: 40px 40px;
+    margin: 0px;
+    padding: 50px 40px;
 }
 
 section article{
-    background-color: rgba(0, 0, 0, 0.192);
-    width: 470px;
-    margin: 0 0;
+    display: inline-block;
+
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.164);
+    
 }
 
 section#bg-flor{
