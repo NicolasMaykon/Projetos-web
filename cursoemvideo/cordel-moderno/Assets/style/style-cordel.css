@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Passion One';
+    src: url(../fonts/PassionOne-Black.ttf) format(truetype);
+    src: url(../fonts/PassionOne-Bold.ttf) format(truetype);
+    src: url(../fonts/PassionOne-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Sriracha Regular';
+    src: url(../fonts/Sriracha-Regular.ttf) format(truetype);
+}
+
+:root{
+
+    --font-padrao: Arial, Verdana, sans-serif;    
+    --font-titulo: 'Passion One', verdana, Tahoma, sans-serif;
+    --font-poesia: 'Sriracha Regular'
+}
+
+.letra{
+    font-size: 1.35em;
+}
+
+*{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    height: 270px;
+}
+
+header h1{
+    font-family: var(--font-titulo);
+    color: white;
+    font-weight: bold;
+    font-size: 7em;
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: 2px;
+}
+
+header p{
+    font-family: var(--font-padrao);
+    color: white;
+    text-align: center;
+}
+
+header a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+main{
+     padding: 20px;
+}
+main p{
+    font-family: var(--font-poesia);
+    font-size: 2em;
+    word-spacing: 10px;
+    white-space: pre-line;
+    padding: 40px 40px;
+}
+
+section article{
+    background-color: rgba(0, 0, 0, 0.192);
+    width: 470px;
+    margin: 0 0;
+}
+
+section#bg-flor{
+    margin: 0 -20px;
+    padding: 0 20px;
+    background-image: url(../imagens/background001.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+section#bg-livro{
+    margin: 0 -20px;
+    padding: 0 20px;
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+p#destaque{
+    color: white;
+
+}
+
+footer{
+    font-family: var(--font-padrao);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+

@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(fontes/BebasNeue-Regular.ttf) format(truetype);
+}
+:root{
+
+    --font-header: 'Bebas Neue';
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+.font-android{
+    font-family: 'android';
+    font-weight: 300;
+    color: #113915;
+}
+.destaque{
+    color: #063b1d;
+    font-weight: 600;
+
+}
+
+.bgcolor{
+    background-image: linear-gradient(90deg, #92d9b2, transparent);
+}
+
+.link-direto{
+    color: #063b1d;
+    font-weight: 700;
+    text-decoration: none;
+}
+.link-direto:hover{
+    background-color: #063b1d;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.link-direto::after{
+    content: "  🔗";
+}
+
+body{
+    margin: 0;
+    background-color: #b6ffd8c0;
+}
+.paragrafo{
+    font-size: 1.1em;
+    line-height: 2em;
+    word-spacing: 2.5px;
+    text-align: justify;
+    font-family: var(--font-padrao);
+    text-indent: 30px;
+}
+
+header{
+    background-image: linear-gradient(180deg, #2ea565, #063b1d);
+    padding: 15px;
+    
+}
+header > h1{
+    font-family: var(--font-header), sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+header > p{
+    font-family: var(--font-padrao);
+    max-width: 500px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+    font-size: 19px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+abbr:hover{
+    cursor: default;
+}
+
+nav{
+    background-color: #063b1d;
+    padding-bottom: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192)
+}
+nav a{
+    font-family: var(--font-padrao);
+    color: #5ceca0;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0px 20px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+nav a:hover{
+    padding: 8px;
+    color: black;
+    background-color: #47b379;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+    border-radius: 0 0 10px 10px;
+}
+main p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main p#final{
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+article{
+    padding: 20px;
+}
+article > h1{
+    margin-top: 0px;
+}
+article > h2{
+    text-indent: 10px;
+    font-size: 1.2em;
+}
+
+img.img-g{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: #063d1e;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #83e1ad;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 33px 0 20px 0;
+}
+
+aside  h3 {
+    background-color: #1a5c38;
+    color: white;
+    padding: 15px 0;
+    text-indent: 30px;
+    border-radius: 33px 0 0 0;
+
+    /*
+    A sintaxe border-radius: 10px 10px 0 0 significa:
+
+        Primeiro valor: canto superior esquerdo
+        Segundo valor: canto superior direito
+        Terceiro valor: canto inferior direito
+        Quarto valor: canto inferior esquerdo
+    */
+    
+}
+
+aside h3::before{
+    content: '🧠';
+}
+
+aside p{
+    padding: 0 10px;
+    word-spacing: 2px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #063b1d;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding: 8px;
+    text-align: center;
+}
+
+
