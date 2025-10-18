@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+
+:root{
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-menu: BBH Sans Hegarty ;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    position: relative;
+    font-family: var(--font-padrao);
+    height: 96.8Vh;
+    background-color: #0066ff9a;
+}
+
+div#central{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px 0 20px 0;
+    border-top: transparent;
+    box-shadow: 19px 20px 20px 0px rgb(0 0 0 / 15%);
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+div#itens{
+    position: absolute;
+
+    left: 50%;
+    top: 60%;
+
+    line-height: 25px;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--font-menu);
+    font-weight: 400;
+    border-radius: 20px 0 0 0;
+    padding: 40px;
+    background-image: linear-gradient(180deg, #0066ff9a, #0066ff7c, transparent);
+
+}
+
+p{
+    font-family: var(--font-padrao);
+}
+
+label{
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.bar{
+    height: 20px;
+    width: 250px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+#botton{
+    margin: 30px;
+    background-color: lightgray;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.226);
+
+}
+
+#botton:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.226);
+}
+
+a{  
+    color: black;
+    text-decoration: none; 
+}
+a:hover{
+    color: red;
+    transform: translate(-2px, -2px);
+}
+
