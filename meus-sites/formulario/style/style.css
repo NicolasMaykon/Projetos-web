@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
 
+
 :root{
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-menu: BBH Sans Hegarty ;
@@ -16,6 +17,7 @@
 body{
     position: relative;
     font-family: var(--font-padrao);
+    overflow: hidden;
     height: 96.8Vh;
     background-color: #0066ff9a;
 }
