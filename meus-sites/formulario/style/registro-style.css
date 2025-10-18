@@ -4,7 +4,7 @@
 
 
 :root{
-    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-padrao: cursive;
     --font-menu: BBH Sans Hegarty ;
     
 }
@@ -21,10 +21,12 @@ body{
     background-color: #0066ff9a;
 }
 
+
+
 main{
     position: absolute;
     background-color: white;
-    height: 550px;
+    height: 600px;
     width: 400px;
 
     margin: 0;
@@ -42,12 +44,11 @@ h1{
     font-family: var(--font-menu);
     text-align: center;
     font-weight: 400;
+    padding: 50px 0px;
     border-radius: 20px 0 0 0;
-    padding: 40px;
     background-image: linear-gradient(180deg, #0066ff9a, #0066ff7c, transparent);
 
 }
-
 
 div{
     position: absolute;
@@ -56,8 +57,7 @@ div{
     top: 58%;
 
     transform: translate(-50%, -50%);
-
-    
+ 
 }
 
 div p {
@@ -81,6 +81,7 @@ fieldset{
     background-color: lightgray;
     border: transparent;
     border-radius: 5px;
+    margin: 10px;
     padding: 10px 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.226);
 
@@ -95,4 +96,11 @@ fieldset{
     transform: translate(-1px, -1px);
 
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.226);
+}
+
+#imagem img{
+    position: absolute;
+    width: 40px;
+    border-radius: 20px 0 0 0;
+    background-color: transparent;
 }
