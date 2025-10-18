@@ -9,7 +9,11 @@
     --font-menu: Monofett ;
     
 }
-
+@media  screen and (orientation: portrait) {
+    *{
+    font-size: 1em;
+    }
+}
 
 *{
     margin: 0;
