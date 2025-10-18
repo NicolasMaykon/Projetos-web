@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
 
 
+@media screen {
+    
+    
+}
+
+
 :root{
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-menu: BBH Sans Hegarty ;
