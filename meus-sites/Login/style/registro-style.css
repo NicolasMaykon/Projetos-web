@@ -9,6 +9,21 @@
     --font-menu: Monofett ;  
 }
 
+@media screen and (orientation: portrait) {
+    #imagem img{
+        position: absolute;
+
+        left: 7%;
+        top: 1.2%;
+
+        width: 40px;
+        border-radius: 20px 0 0 0;
+        background-color: transparent;
+    }
+   
+}
+    
+
 *{
     margin: 0;
     padding: 0;
