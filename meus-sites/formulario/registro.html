@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/registro-style.css">
+    <title>Registra-se</title>
+</head>
+<body>
+    <main id="cadastro">
+        <h1>Registro</h1>
+        <div>
+            <form action="" method="post" autocomplete="on">
+                <p>
+                    <label for="iname">Nome:</label><br>
+                    <input type="text" name="name" id="iname" required maxlength="20" autocomplete="name">
+                </p>
+                <p>
+                    <label for="ilastname">Sobrenome:</label><br>
+                    <input type="text" name="lastname" id="ilastname" required maxlength="20">
+                </p>
+                <p>
+                    <label for="iemail">Email:</label><br>
+                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label><br>
+                    <input type="tel" name="tel" id="itel" 
+                    pattern="^\(?\d{2}\)?\s?\d{4,5}-\d{4}$"
+                    placeholder="(xx) xxxx-xxxx" required>
+                </p>
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <label for="iwoman">Feminino:</label>
+                    <input type="radio" name="sexo" id="iwoman" value="F">
+                    <br>
+                    <label for="iman">Masculino:</label>
+                    <input type="radio" name="sexo" id="iman" value="M">
+                </fieldset>
+
+
+                <p id="fundo-botton">
+                    <input id="botton" type="submit" value="Cadastrar">
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
