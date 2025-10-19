@@ -81,12 +81,38 @@ label{
 }
 
 .bar{
+
     height: 21px;
     width: 250px;
-    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.329);
+    margin: 10px 0;
+    padding: 5px 0 ;
+    border: none;
     text-align: center;
 }
 
+#iusername{
+    background-image: url(../image/icon/person.png);
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+
+}
+
+#isenha{
+    background-image: url(../image/icon/password.png);
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+
+}
+
+.bar:placeholder-shown{
+    
+    border-radius: 3px;
+    color: black;
+    font-weight: bolder;
+    text-align: left;
+    text-indent: 10px;
+}
 
 #botton{
     margin: 30px;

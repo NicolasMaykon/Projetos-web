@@ -9,36 +9,31 @@
 </head>
 <body>
     <main id="cadastro">
-        <a id="imagem" href="login.html"><img src="image/Seta Negra em Fundo Quadriculado.png" alt="voltar"></a>
+        <a id="imagem" href="login.html"><img src="image/icon/leftarrow.png" alt="voltar"></a>
         <h1>Registro</h1>
         <div>
             <form action="" method="post" autocomplete="on">
                 <p>
-                    <label for="iname">Nome:</label><br>
-                    <input type="text" name="name" id="iname" required maxlength="20" autocomplete="name">
+                    <input class="bar" type="text" name="name" id="iname" required maxlength="20" autocomplete="name" placeholder="Nome">
                 </p>
                 <p>
-                    <label for="ilastname">Sobrenome:</label><br>
-                    <input type="text" name="lastname" id="ilastname" required maxlength="20">
+                    <input class="bar" type="text" name="lastname" id="ilastname" required maxlength="20" placeholder="Sobrenome">
                 </p>
                 <p>
-                    <label for="iemail">Email:</label><br>
-                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                    <input class="bar" type="email" name="email" id="iemail" required autocomplete="email" placeholder="Email">
                 </p>
                 <p>
-                    <label for="itel">Telefone:</label><br>
-                    <input type="tel" name="tel" id="itel" 
+                    <input class="bar" type="tel" name="tel" id="itel" 
                     pattern="^\(?\d{2}\)?\s?\d{4,5}-\d{4}$"
-                    placeholder="(xx) xxxx-xxxx" required>
+                    placeholder="Telefone" required>
                 </p>
-                <fieldset>
-                    <legend>Sexo:</legend>
-                    <label for="iwoman">Feminino:</label>
-                    <input type="radio" name="sexo" id="iwoman" value="F">
-                    <br>
-                    <label for="iman">Masculino:</label>
-                    <input type="radio" name="sexo" id="iman" value="M">
-                </fieldset>
+                <p>
+                    <select name="sexo" id="isexo">
+                        <option value="" selected>Sexo</option>
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option>
+                    </select>
+                </p>
 
 
                 <p id="fundo-botton">

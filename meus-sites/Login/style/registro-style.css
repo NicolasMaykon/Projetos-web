@@ -57,6 +57,8 @@ main{
     top: 50%;
 
     transform: translate(-50%, -50%);
+
+     box-shadow: 19px 20px 20px 0px rgb(0 0 0 / 15%);
 }
 
 h1{
@@ -90,18 +92,72 @@ label{
     font-family: var(--font-worksans);
 }
 
-input{
-    border: 1px solid black;
-    padding: 3px 0;
+.bar{
+    height: 21px;
+    width: 250px;
+    background-color: rgba(128, 128, 128, 0.329);
+    margin: 10px 0;
+    padding: 5px 0 ;
+    border: none;
+    border-radius: 5px;
     text-align: center;
+
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
 }
 
-fieldset{
+
+.bar:placeholder-shown{
+    font-family: var(--font-worksans);
+    word-spacing: 5px;
+    font-weight: bolder;
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+#iname{
+    background-image: url(../image/icon/person.png);
+    
+
+}
+#ilastname{
+    background-image: url(../image/icon/group-person.png);
+    
+}
+
+#iemail{
+    background-image: url(../image/icon/email.png);
+  
+}
+#itel{
+    background-image: url(../image/icon/phone.png);
+}
+
+#isexo{
+    font-family: var(--font-worksans);
+    font-weight: bolder;
     margin: 20px 0px;
-
-    border: 1px solid black;
-    padding: 5px 10px;
+    text-indent: 10px;
+    width: 100%;
+    padding: 10px 0 ;
+    border-radius: 10px;
+    background-color:  rgba(128, 128, 128, 0.171);
+    border: none;
 }
+
+select{
+    appearance: none;
+
+    background-image: url(../image/icon/chevron-down-svgrepo-com.png);
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+
+}
+
+
 
 #botton{
     background-color: lightgray;
