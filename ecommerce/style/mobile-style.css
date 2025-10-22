@@ -2,7 +2,8 @@
 
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -16,7 +17,6 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-
 
 
     border-radius: 2px;
@@ -42,14 +42,12 @@ header > nav{
     
 }
 
-
-
 header > div{
     position: absolute;
 
     left: 50%;
     top: 15%;
-    width: 349px;
+    width: 400px;
 
     transform: translate(-50%);
 
@@ -62,6 +60,7 @@ header > div{
     line-height: 40px;
     color: antiquewhite;
 }
+
 header > div > h1{
     text-align: center;
 }
@@ -85,8 +84,7 @@ main > h3{
     height: auto;
     width: 400px;
     margin: auto;
-    
-   
+     
 }
 
 .image{
@@ -142,19 +140,4 @@ button{
 button:hover{
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.322);
-}
-
-
-
-header{
-    position: relative;
-    background-image: url(../image/background/bg-mobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    border-radius: 2px;
-
-    width: 100vw;
-    height: 100vh;
 }
