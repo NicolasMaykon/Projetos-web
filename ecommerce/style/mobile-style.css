@@ -10,8 +10,7 @@
 
 body{
     background-color: rgba(245, 245, 220, 0.637);
-    width: 100%;
-
+    
 }
 
 header{
@@ -20,8 +19,6 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border: none;
-    width: 100%;
     min-height: 100vh;
 }
 
@@ -32,7 +29,7 @@ header > nav{
     top: 5%;
 
     transform: translateX(-50%);
-    word-spacing: 2px;
+    word-spacing: 1px;
 }
 
 #navbotton > a{
@@ -47,7 +44,7 @@ header > div{
 
     left: 50%;
     top: 15%;
-    width: 400px;
+    width: 280px;
 
     transform: translateX(-50%);
 
@@ -57,7 +54,7 @@ header > div{
     
 
     padding: 15px;
-    line-height: 40px;
+    line-height: 25px;
     color: antiquewhite;
 }
 
@@ -81,7 +78,7 @@ main > h3{
 }
 
 #div-main{
-    width: 400px;
+    width: 280px;
     margin: auto;
      
 }
