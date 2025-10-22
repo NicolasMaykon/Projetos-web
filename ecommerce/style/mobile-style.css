@@ -20,9 +20,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
-    border-radius: 2px;
-
+    border: none;
     width: 100%;
     min-height: 100vh;
 }
