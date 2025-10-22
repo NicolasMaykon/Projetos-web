@@ -12,11 +12,10 @@ body{
 header{
     position: relative;
     background-image: url(../image/background/bgheader.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
 
-   
 
     border-radius: 2px;
 
