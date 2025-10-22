@@ -9,7 +9,7 @@
 
 
 body{
-    background-color: rgba(245, 245, 220, 0.637);
+    background-color: white;
     
 }
 
@@ -25,13 +25,10 @@ header{
 header > nav{
     position: absolute;
 
-    left: 50%;
+    left: 45%;
     top: 5%;
 
-    margin: 0;
-
-    transform: translateX(-50%);
-    word-spacing: 1px;
+    transform: translateX(-45%);
 }
 
 #navbotton > a{
@@ -46,7 +43,7 @@ header > div{
 
     left: 50%;
     top: 15%;
-    width: 300px;
+    width: 330px;
 
     transform: translateX(-50%);
 
@@ -80,7 +77,7 @@ main > h3{
 }
 
 #div-main{
-    width: 280px;
+    width: 330px;
     margin: auto;
      
 }
