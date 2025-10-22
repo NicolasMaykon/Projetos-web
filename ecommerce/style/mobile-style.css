@@ -28,6 +28,8 @@ header > nav{
     left: 50%;
     top: 5%;
 
+    margin: 0;
+
     transform: translateX(-50%);
     word-spacing: 1px;
 }
@@ -44,7 +46,7 @@ header > div{
 
     left: 50%;
     top: 15%;
-    width: 280px;
+    width: 300px;
 
     transform: translateX(-50%);
 
