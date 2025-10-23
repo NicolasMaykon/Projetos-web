@@ -1,26 +1,33 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root{
+    --font-header: "Bricolage Grotesque";
+    --font-nav: Arial;
+
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
+    position: relative;
     background-color: white;
 }
 
 header{
-    position: relative;
-    background-image: url(../image/background/bgheader.png);
+    
+    background-image: url(../image/background/bg-wide.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-
-
-    border-radius: 2px;
+    background-position: bottom center;
 
     width: 100vw;
     height: 100vh;
+      
 }
 
 header > nav{
@@ -34,9 +41,15 @@ header > nav{
 }
 
 #navbotton > a{
+    font-family: var(--font-nav);
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
+    
+}
+
+#navbotton > a:hover{
+    text-decoration: underline;
     
 }
 
@@ -45,9 +58,9 @@ header > nav{
 header > div{
     position: absolute;
 
-    left: 60%;
-    top: 30%;
-    width: 400px;
+    left: 62%;
+    top: 18%;
+    width: 350px;
 
     background-color: transparent;
     border: 1px solid black;
@@ -59,10 +72,13 @@ header > div{
     color: antiquewhite;
 }
 header > div > h1{
+    font-size: 2.2em;
+    font-family: var(--font-header);
     text-align: center;
 }
 
 header > div > p{
+    font-family: var(--font-header);
     text-indent: 20px;
     text-align: justify;
 }
