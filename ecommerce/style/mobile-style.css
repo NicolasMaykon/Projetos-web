@@ -52,7 +52,7 @@ header > div{
 
     left: 50%;
     top: 15%;
-    width: 275px;
+    width: 90vw;
 
     transform: translateX(-50%);
 
@@ -89,7 +89,7 @@ main > h3{
 }
 
 #div-main{
-    width: 280px;
+    width: 90vw;
     margin: auto;
      
 }
