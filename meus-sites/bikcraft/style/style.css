@@ -33,6 +33,10 @@ p{
   text-decoration: none;
   padding: 20px 30px; 
 }
+.button:hover{
+  background-color: #c6c6c6;
+  color: white;
+}
 .main-grid{
   display: grid;
   margin-top: 50px;
@@ -67,11 +71,16 @@ p{
   display: inline-block;
   margin-top: 25px;
   font-size: 1em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
   background-color: #ee2211;
   border-radius: 5px;
   color: white;
   padding: 15px 30px;
   text-decoration: none;
+}
+#link:hover{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.425);
+  transform: translate(-3px, -3px);
 }
 .item3{
   display: grid;
