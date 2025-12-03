@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media (max-width: 500px) {
+
+
+  header > nav.navbar > ul{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: start;
+    margin: 0 20px;
+    gap: 1.3rem 1rem;
+    list-style: none;
+  }
+  header > nav.navbar > ul > li {
+   margin: 0.5rem 0;
+  }
+  main.main-grid{
+    grid-template-columns: 47ch;
+  }
+  article.intro{
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    justify-items: start;
+    text-align: left;
+    background-color: #fff;
+    padding: 4rem;
+  }
+  article.intro > h1::before{
+    content: "";
+    display: none;
+  }
+  article.intro > h1{
+    font-size: 2rem;
+  }
+  article.vantagens{
+    padding: 4rem;
+    background-color: #fff;
+  }
+  article.texto-grande{
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding: 4rem;
+  }
+  article.texto-grande > h2{
+    text-align: center;
+    word-break: break-all;
+    font-size: 2.7rem;
+    color: #c6c6c6;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1000px){
+
+}
