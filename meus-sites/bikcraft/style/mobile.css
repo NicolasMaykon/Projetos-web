@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
-@media (max-width: 500px) {
-
+@media (max-width: 550px) {
+  body{
+    overflow-x: hidden;
+  }
 
   header > nav.navbar > ul{
-    display: flex;
-    flex-wrap: wrap;
-    place-content: start;
-    margin: 0 20px;
-    gap: 1.3rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-content: center;
+    gap: 10px;
     list-style: none;
   }
   header > nav.navbar > ul > li {
    margin: 0.5rem 0;
   }
-  main.main-grid{
-    grid-template-columns: 47ch;
+  div.primeiro-conteudo{
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
   }
   article.intro{
     display: grid;
@@ -24,34 +26,39 @@
     justify-items: start;
     text-align: left;
     background-color: #fff;
-    padding: 4rem;
+
   }
   article.intro > h1::before{
-    content: "";
     display: none;
   }
-  article.intro > h1{
-    font-size: 2rem;
+  section.imagem{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
   }
+
+  div.segundo-conteudo{
+    grid-template-columns: 1fr;
+  }
+
   article.vantagens{
-    padding: 4rem;
     background-color: #fff;
   }
   article.texto-grande{
     display: grid;
-    align-items: center;
-    justify-content: end;
-    padding: 4rem;
+    place-self: center;
   }
   article.texto-grande > h2{
     text-align: center;
     word-break: break-all;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: #c6c6c6;
     text-transform: uppercase;
   }
 }
 
 @media (max-width: 1000px){
-
+  div.segundo-conteudo{
+    grid-template-columns: 1fr;
+  }
 }

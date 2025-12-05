@@ -9,17 +9,20 @@ body{
   background-color: #f7f7f7;
 }
 
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
 header img{
-  display: block;
-  width: 150px;
-  margin: 50px auto;
-
-}  
+  place-self: center;
+  padding-top: 50px;
+}   
 header > nav.navbar > ul{
   display: flex;
   flex-wrap: wrap;
   place-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
 }
 header > nav.navbar a{
@@ -27,7 +30,7 @@ header > nav.navbar a{
   text-transform: uppercase;
   color: #000;
   font-size: 1rem;
-  padding: 1rem 2.5rem;
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -35,11 +38,11 @@ header > nav.navbar a:hover{
   border: 2px solid #e21;
 }
 
-main.main-grid{
+div.primeiro-conteudo{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   place-self: center;
-  margin: 5rem 0;
+  margin-top: 5rem;
   max-width: 1000px;
 }
 article.intro{
@@ -78,14 +81,22 @@ article.intro a{
 section.imagem img{
   display: block;
   max-width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center left;
+}
+div.segundo-conteudo{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-self: center;
+  max-width: 1000px;
 }
 article.texto-grande{
   display: grid;
   align-items: center;
   justify-content: end;
-  padding: 4rem;
+  padding: 3.5rem;
+  word-break: break-all;
 }
 article.texto-grande > h2{
   text-align: right;
