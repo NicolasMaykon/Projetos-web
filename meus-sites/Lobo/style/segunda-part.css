@@ -80,6 +80,12 @@
   border-radius: 5px;
   padding: 5px 10px;
 }
+@media (max-width: 1050px){
+  .segunda-parte .segundo-bloco{
+    padding-right: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   .segunda-parte {
     grid-template-columns: 1fr;
