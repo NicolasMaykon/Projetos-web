@@ -17,10 +17,15 @@ footer > section{
   padding: 120px 20px 120px 20px;
 }
 footer > section::before{
-  content: url(../img/detalhe.svg);
+  content: "";
   display: block;
   position: absolute;
-  top: -70px;
+  background-image: url(../img/detalhe.svg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  top: -100px;
 }
 .mensagem-final > p{
   font-size: 1.5rem;
@@ -47,13 +52,12 @@ footer > p{
     grid-template-columns: 1fr;
   }
   footer > section::before{
-    content: url(../img/detalhe.svg);
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: -70px;
-    
+    content: "";
+    background-image: url(../img/detalhe.svg); 
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    top: -42px;
   }
 
 }
