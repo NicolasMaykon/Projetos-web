@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.terceira-parte {
+  display: block;
+  background-color: #141414;
+}
+
+.terceira-parte .container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  gap: 3.1rem;
+  padding: 10ch 20px;
+}
+
+.terceira-parte .primeiro-bloco {
+  grid-row: span 2;
+}
+
+.terceira-parte .primeiro-bloco h2 {
+  display: grid;
+  align-self: center;
+  justify-content: start;
+  text-transform: uppercase;
+  word-break: break-all;
+  font-size: 19ch;
+}
+
+.segundo-bloco {
+  display: grid;
+}
+
+.segundo-bloco> p {
+  color: #8f8f8f;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.segundo-bloco > p > .strong{
+  color: #fff;
+}
+.segundo-bloco > .faculdade {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 20px;
+  color: #fff;
+}
+
+.faculdade>.formacoes {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  flex: 1;
+  min-width: 140px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.faculdade>.formacoes::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 43px;
+  left: -5px;
+  width: 5px;
+  height: 25px;
+  background-image: linear-gradient(360deg, #b6f829, #67dd0a);
+}
+
+.formacoes p {
+  font-size: 14px;
+}
+
+.formacoes h3 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+
+.terceira-parte .terceiro-bloco {
+  grid-column: 2;
+  color: #fff;
+}
+
+.complementares {
+  margin-bottom: 60px;
+}
+
+.complementares h3 {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #8f8f8f;
+}
+
+.complementares h3::before {
+  content: url(../img/cursos.svg);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -35px;
+  width: 24px;
+  height: 24px;
+}
+
+.complementares .design {
+  display: flex;
+  gap: 30px;
+}
+
+.complementares h4 {
+  font-weight: 600;
+}
+
+.complementares p {
+  color: #8f8f8f;
+  text-align: right;
+}
+
+.complementares .front-end {
+  display: flex;
+  gap: 10px;
+}
+
+.idioma h3 {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #8f8f8f;
+}
+
+.idioma h3::before {
+  content: url(../img/idiomas.svg);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -35px;
+  width: 24px;
+  height: 24px;
+}
+
+.idioma > div {
+  display: flex;
+  font-size: 18px;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.idioma > div > p {
+  color: #8f8f8f;
+}
+
+.idioma .destaque {
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .terceira-parte .container{
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 6ch 20px
+  }
+  .container .primeiro-bloco h2{
+    font-size: 32px;
+    color: #8f8f8f;
+    margin-bottom: 30px;
+  }
+  .terceira-parte .terceiro-bloco {
+    padding: 10px 40px;
+    grid-column: 1;
+    color: #fff;
+  }
+}
